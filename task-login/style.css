@@ -1,0 +1,58 @@
+li {
+    list-style: none;
+}
+
+body {
+    background: rgb(232, 232, 232);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    width: 340px;
+    height: 277px;
+    background: white;
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.li_one {
+    text-align: center;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 1);
+}
+
+form li {
+    margin-bottom: 10px;
+}
+
+.li_two,
+.li_three,
+.li_five {
+    height: 50px;
+    width: 300px;
+    font-size: 100%;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 5px;
+    margin-left: 16px;
+    margin-right: 4px;
+    padding-left: 5px;
+}
+
+.li_four {
+    margin-left: 16px;
+    margin-right: 10px;
+}
+
+button {
+    margin: 0 auto;
+    background: #1890ff;
+    color: white;
+}

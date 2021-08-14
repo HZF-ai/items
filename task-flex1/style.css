@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.biggest_box {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    height: 210px;
+    background: #d23e34;
+    margin-bottom: 30px;
+    box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+
+.top {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 30px;
+}
+
+.bottom {
+    width: 100%;
+    height: 70px;
+    background-color: #d23e34;
+    /* margin-bottom: 10px; */
+}
+
+.bottom div {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    background: white;
+}
+
+.ranking {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.good_hot {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* border: 1px solid black; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 5%;
+    background-color: #b9211f;
+}
+
+.hot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    /* border: 1px solid black; */
+    margin-right: 5%;
+    /* background-color: #5651514d; */
+}
+
+.article :nth-child(1) {
+    width: 25px;
+    height: 25px;
+    /* border: 1px solid blue; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5% 5% 0 0;
+}
+
+.article :nth-child(2) {
+    width: 100px;
+    height: 25px;
+    /* border: 1px solid yellow; */
+    color: white;
+}
+
+.hot :nth-child(1) {
+    width: 25px;
+    height: 25px;
+    /* border: 1px solid blue; */
+}
+
+.hot li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5% 5% 0 0;
+}
+
+.hot :nth-child(2) {
+    width: 100px;
+    height: 25px;
+    /* border: 1px solid yellow; */
+    color: white;
+}
+
+.radius {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.article_content {
+    width: 50px;
+    height: 23px;
+    z-index: 1;
+    margin: 0 auto;
+    /* border: 1px solid yellow; */
+    background-color: #d23e34;
+    color: white;
+    text-align: center;
+    line-height: 23px;
+    margin-right: 80%;
+}
+
+
+/* 中间top热度排行css样式 */
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #33333329;
+}
+
+.top1_box,
+.top2_box,
+.top3_box,
+.top4_box,
+.top5_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    background-color: white;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.same1,
+.same2,
+.same3 {
+    /* width: 80%; */
+    margin: 1px;
+    /* border: 1px solid yellow; */
+}
+
+.same1 {
+    position: relative;
+    flex: 7;
+    /* width: 80%;
+    height: 150px; */
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.same1 :nth-child(1) {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    border-radius: 10px 0 0 0;
+}
+
+.same2 {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+    /* margin-top: 6px; */
+}
+
+.same3 {
+    flex: 1;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.same3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.same3 div {
+    /* width: 10%; */
+    /* border: 1px solid red; */
+    width: 30px;
+    height: 10px;
+    margin: 1px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #bfbfbf;
+}

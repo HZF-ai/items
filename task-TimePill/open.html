@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/open-style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <a class="logo" href="/">时间胶囊</a>
+
+
+            <ul class="nav">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./put.html">添加</a></li>
+                <li><a href="./open.html">打开</a></li>
+            </ul>
+            <ul class="nav nav-user">
+                <li>
+                    <a href="">
+                        回胶囊日记
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="page-header">打开胶囊</h1>
+        <div class="main">
+            <form method="post" style="margin-bottom: 30px;">
+                <label>胶囊Key：
+                    <input id="getcon" name="key" value="" style="width:220px;" type="text">
+                    
+                        <button id="open-jn" onclick="openit()" type="button">打开胶囊</button>
+                </label>
+            </form>
+            <div class="pill">
+                <div id="h2" class="show-content1"></div>
+                <br>
+                <div id="final" class="show-content">
+                </div>
+                <div id="tip"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="./scripts/open.js"></script>
+
+</html>

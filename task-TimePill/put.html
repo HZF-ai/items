@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/put-style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <a class="logo" href="/">时间胶囊</a>
+
+
+            <ul class="nav">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./put.html">添加</a></li>
+                <li><a href="./open.html">打开</a></li>
+            </ul>
+            <ul class="nav nav-user">
+                <li>
+                    <a href="">
+                        回胶囊日记
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="page-header">添加胶囊</h1>
+        <div class="main">
+
+            <form>
+                <label>你的名字</label>
+                <div id="err1" class="err err1">名字 必须填写.</div>
+                <input id="username" name="name" value="" style="width:220px" type="text">
+
+                <label>你的邮箱</label>
+                <div id="err2" class="err err2">邮箱 必须是一个有效的电子邮箱地址.</div>
+                <input id="useremail" name="email" value="" style="width:220px" type="text">
+                <label>打开时间</label>
+                <input id="inputtime" name="time" value="2021-07-16 17:24:15" style="width:220px" type="text">
+                <span class="tips">打开时间之前，胶囊内容是看不到的。</span>
+                <label>胶囊内容</label>
+                <div id="err3" class="err err3">内容 必须填写.</div>
+                <textarea id="usercontent" name="content" value="" style="margin-bottom: 0" rows="8" cols="50"></textarea>
+                <br>
+                <span class="tips">胶囊内容不能超过5000字。</span>
+                <label style="margin-top: 10px;">未到期提示信息</label>
+                <textarea id="usertipmessage" name="tips" value="" style="margin-bottom: 0" rows="3" cols="50"></textarea>
+                <br>
+                <span class="tips">在 打开时间 之前打开胶囊，会看到提示信息。</span>
+                <p class="form-p" style="margin-top: 20px;">
+                    <input onclick="return sub()" id="submit" type="button" value="添加胶囊">
+                    <p>
+            </form>
+
+        </div>
+    </div>
+</body>
+<script src="scripts/put.js"></script>
+
+
+</html>

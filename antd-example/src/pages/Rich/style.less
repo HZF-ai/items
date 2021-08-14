@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width:100%;
+    height:100vh;
+}
+.content_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.content_input{
+    width:300px;
+    margin-right: 5px;
+}
+.content_button{
+    margin-right: 5px;
+}
+
+:global{
+    .ant-table-thead > tr{
+        & > th {
+            height:60px;
+            border-top: 1px solid #bbbbbb !important;
+            border-bottom: 1px solid #bbbbbb !important;
+            &:first-child{
+                border-left: 1px solid #bbbbbb !important;
+            }
+            &:last-child{
+                border-right: 1px solid #bbbbbb !important;
+            }
+            background-color: #fff !important;
+            &::before{
+                display: none ;
+            }
+        }
+    }
+    .ant-table-tbody > tr{
+        // margin-top:10px !important;
+        // margin:10px !important;直接设margin没用
+        & > td {
+            border-top: 1px solid #bbbbbb !important;
+            border-bottom: 1px solid #bbbbbb !important;
+            // border-top: 20px solid #fff !important;
+            &:first-child{
+                border-left: 1px solid #bbbbbb !important;
+            }
+            &:last-child{
+                border-right: 1px solid #bbbbbb !important;
+            }
+        }
+    }
+}
+
+form {
+    width: 100%;
+    height: 220px;
+    margin-top: -20px;
+}
+
+form input {
+    //width: 320px;
+    //height: 40px;
+    //border: 1px solid rgb(185, 182, 182);
+    //margin-top: 15px;
+}
+
+form div {
+    display: inline-block;
+    //width: 80px;
+}
+//
+//form li {
+//    display: inline-block;
+//    width: 80px;
+//    height: 75px;
+//    border: 1px solid rgb(185, 182, 182);
+//    margin-left: 35px;
+//    margin-top: 15px;
+//    /* margin: 0 auto; */
+//    position: relative;
+//    width: 60px;
+//    height: 60px;
+//}
+
+form li button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 10px; */
+    /* height: 10px; */
+    position: absolute;
+    font-size: 20px;
+}
+
+.add_title {
+    width: 50px;
+    height: 50px;
+    margin-right: 38px;
+    margin-top: 5px;
+}
+
+.add_cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    //align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
